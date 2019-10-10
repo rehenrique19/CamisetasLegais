@@ -1,7 +1,5 @@
 package com.devweb.camisaslegais;
 
-import com.google.appengine.api.utils.SystemProperty;
-
 import java.io.IOException;
 import java.util.Properties;
 
@@ -20,8 +18,7 @@ public class HelloAppEngine extends HttpServlet {
     Properties properties = System.getProperties();
 
     response.setContentType("text/plain");
-    response.getWriter().println("ROGERINHO BRABO Hello App Engine - Standard using "
-        + SystemProperty.version.get() + " Java " + properties.get("java.specification.version"));
+    response.getWriter().println("ROGERINHO BRABO Hello App Engine - Standard using Java ");
   }
 
   public static String getInfo() {
